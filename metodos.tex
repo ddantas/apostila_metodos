@@ -1,0 +1,266 @@
+\documentclass{book}
+
+\pagenumbering{roman} 
+\pagestyle{empty}
+
+% Notas de aula
+%
+% Template criado em 24/9/2013
+% Daniel Oliveira Dantas
+%
+% Ctrl+x 8 , c = ç
+
+\usepackage[utf8]{inputenc}
+\usepackage[english, brazil]{babel}
+
+\usepackage{color}
+\definecolor{gray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{lightgray}{rgb}{0.67, 0.67, 0.67}
+
+% Adicionado para permitir a criação de listas com vários graus de aninhamento
+% ddantas, 24/03/2020
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[ampersand]{easylist}
+\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=--- , Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
+
+% Adicionado para permitir a inserção de figuras
+% ddantas, 24/03/2020
+\usepackage{graphicx}
+
+% Adicionado para permitir a inserção de figuras
+% ddantas, 31/03/2020
+\usepackage{subcaption}
+
+% Adicionado para permitir o uso de \begin{align}
+% ddantas, 19/07/2024
+\usepackage{mathtools}
+
+% Adicionado para permitir o uso de \makecell[c]{...}
+% ddantas, 27/08/2024
+\usepackage{makecell}
+
+% Box drawing characters, greek letters, \blacksquare
+% ddantas, 22/09/2024
+\usepackage{pmboxdraw}
+\usepackage{alphabeta}
+%\usepackage{amsmath}
+\usepackage{MnSymbol}
+%\usepackage{wasysym}
+
+% ddantas, 28/06/2025
+% \url
+\usepackage{url}
+% \begin{adjustbox}, \end{adjustbox}
+\usepackage{adjustbox}
+%% toprule, midrule, bottomrule
+\usepackage{booktabs}
+
+% Formatacao
+\newcommand{\HSPACE}{{\hspace*{1cm}}}
+\newcommand{\NEWLINE}{~\\}
+\newcommand{\BV}{\begin{verbatim}}
+\newcommand{\EV}{\end{verbatim}}
+
+% Formatacao Metodologia
+\newcommand{\QED}{\blacksquare}
+\newcommand{\SKIP}{\vspace{0.5cm}}
+\newcommand{\EXERCICIOS}{\SKIP {\bf Exercícios}}
+
+% renewcommand
+\renewcommand\chaptername{Capítulo}
+%\renewcommand\lstlistingname{Listagem}
+
+
+\title{Notas de aula de Métodos e Técnicas de Pesquisa}
+
+\author{Daniel Oliveira Dantas}
+\date{22 de junho de 2025}
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Índice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% main text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Metodologia cientifica
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{01_intro.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Trabalhos cientificos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{02_trabalhos.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Tipos de dados compostos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{03_type.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Funções
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{04_func.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Som e gráficos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{05_av.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Jogo baseado em texto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{06_rpg.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Intreração com o teclado e game loop
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{07_game.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Indentação
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{indent.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Entrada e saída
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{io.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Vetores
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{array.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Funções
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{function.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Exercícios
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{exercise.tex}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capítulo: Exemplos de programas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapter{Exemplos de programas}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: pause.cpp
+
+%\section{pause.cpp}
+
+%\lstinputlisting[caption=series.cpp]{src/pause.cpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: ascii.cpp
+
+%\section{ascii.cpp}
+
+%\lstinputlisting[caption=ascii.cpp]{src/ascii.cpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: dado.cpp
+
+%\section{dado.cpp}
+
+%\lstinputlisting[caption=dado.cpp]{src/dado.cpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: primos.cpp
+
+%\section{primos.cpp}
+
+%\lstinputlisting[caption=series.cpp]{src/primos.cpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: series.cpp
+
+%\section{series.cpp}
+
+%\lstinputlisting[caption=series.cpp]{src/series.cpp}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: generate.cpp
+
+%\section{generate.cpp}
+
+%\lstinputlisting[caption=generate.cpp]{src/generate.cpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Seção: ordena.cpp
+
+%\section{ordena.cpp}
+
+%\lstinputlisting[caption=ordena.cpp]{src/ordena.cpp}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Apêndice: Tabela ASCII
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{ascii.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% main text end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\nocite{Wazlawick2014metodologia}
+\nocite{Day1998write}
+\nocite{Zobel1997writing}
+\nocite{Gil1987elaborar}
+\nocite{Kuhn1996structure}
+\nocite{Gardner1994relationship1}
+\nocite{Gardner1995relationship2}
+
+\bibliography{refs}
+\bibliographystyle{plain}
+
+\end{document}
+
